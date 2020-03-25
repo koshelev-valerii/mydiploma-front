@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Diploma</title>
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>" />
+</head>
+<body>
+  <div class="root">
+    <header class="header root__section">
+      <div class="header__title">NewsExplorer</div>
+      <div class="header__page">
+        <p class="header__page-name">Главная</p>
+        <div class="header__page-underline"></div>
+      </div>
+      <div class="header__page">
+        <p class="header__page-name">Сохранённые статьи</p>
+        <div class="header__page-underline"></div>
+      </div>
+      <div class="header__button">
+        <p class="button__text-signin">Авторизоваться</p>
+        <p class="button__text-signout"><!-- Имя пользователя --></p>
+        <p class="button__img">[-></p>
+      </div>
+    </header>
+    <div class="search root__section">
+      <h1 class="search__title">Что в мире творится?</h1>
+      <h2 class="search__subtitle">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</h2>
+      <div class="search__field">
+        <input type="text" class="field__input" placeholder="Запрос">
+        <button class="field__button">Искать</button>
+      </div>
+    </div>
+    <div class="articles-list root__section">
+    </div>
+    <div class="about root__section">
+      <picture>
+        <!-- <source media="(max-width: 400px)" srcset="<%=require('')%>" /> -->
+        <!-- <source media="(max-width: 800px)" srcset="<%=require('')%>" /> -->
+        <img class="about__photo" src="#" alt="Аватар пользователя" />
+      </picture>
+      <div class="about__description">
+        <h2 class="description__title"></h2>
+        <p class="description__text">Имя автора</p>
+        <p class="description__text">текст автора</p>
+      </div>
+    </div>
+    <div id="signin" class="popup popup__signin">
+      <div class="popup__content">
+        <img src="<%=require('./images/close.svg').default%>" alt="закрыть" class="popup__close popup__close-signin">
+        <h2 class="popup__title">Вход</h2>
+        <form class="popup__form" novalidate name="signin">
+          <div class="input-container">
+            <p class="input__title">Email</p>
+            <input id="email" type="email" required name="email" class="popup__input popup__input-signin1" placeholder="Введите email">
+            <span id="error-email" class="error-message"></span>
+          </div>
+          <div class="input-container">
+            <p class="input__title">Пароль</p>
+            <input id="password" type="text" required name="password" class="popup__input popup__input-signin2" placeholder="Введите пароль">
+            <span id="error-password" class="error-message"></span>
+          </div>
+            <button type class="button popup__button popup__button-signin">Войти</button>
+            <p class="button__subtitle">или <button class="open__register">Зарегистрироваться</button></p>
+        </form>
+      </div>
+    </div>
+    <div id="register" class="popup popup__register">
+      <div class="popup__content">
+        <img src="<%=require('./images/close.svg').default%>" alt="закрыть" class="popup__close popup__close-register">
+        <h2 class="popup__title">Регистрация</h2>
+        <form class="popup__form" novalidate name="register" >
+          <div class="input-container">
+            <p class="input__title">Email</p>
+            <input id="email" type="email" required name="email" class="popup__input popup__input-register1" placeholder="Введите email">
+            <span id="error-email" class="error-message"></span>
+          </div>
+          <div class="input-container">
+            <p class="input__title">Пароль</p>
+            <input id="password" type="text" required name="password" class="popup__input popup__input-signin2" placeholder="Введите пароль">
+            <span id="error-password" class="error-message"></span>
+          </div>
+          <div class="input-container">
+            <p class="input__title">Имя</p>
+            <input id="name" type="text" required name="name" minlength="2" maxlength="30" class="popup__input popup__input-register2 register__name" placeholder="Введите имя">
+            <span id="error-name" class="error-message"></span>
+          </div>
+          <button type class="button popup__button popup__button-register">Зарегистрироваться</button>
+          <p class="button__subtitle">или <button class="open__signin">Войти</button></p>
+        </form>
+      </div>
+    </div>
+    <div id="avatar" class="popup popup__avatar">
+      <div class="popup__success">
+          <img src="<%=require('./images/close.svg').default%>" alt="закрыть" class="popup__close popup__close-avatar">
+          <h2 class="popup__title">Пользователь успешно зарегистрирован!</h2>
+          <button type class="button open__signin">Выполнить вход</button>
+      </div>
+    </div>
+    <footer class="footer root__section">
+      <p></p>
+      <a href="#">Главная</a>
+      <a href="#">Яндекс.Практикум</a>
+      <img src="#" alt="гитхаб">
+      <img src="#" alt="почта">
+    </footer>
+  </div>
+  <script type="module" src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+</body>
+</html>
