@@ -11,7 +11,7 @@
 ## Where you can find me?
 -------------------------------
 
-### [Link to the project](https://koshelev-valerii.github.io/MyDiploma-Front/)
+### [Link to the project](https://koshelev-valerii.github.io/mydiploma-front/)
 
 
 `https://mydiploma.website/` (domain for front part)
