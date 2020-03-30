@@ -1,0 +1,25 @@
+.description__name {
+  margin: 12px 0 16px;
+  width: 100%;
+  font-family: 'Roboto Slab', Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 30px;
+  color: #1A1B22;
+}
+
+@media screen and (max-width: 1300px) {
+  .description__name {
+    margin: 12px 0 10px;
+    font-size: 24px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .description__name {
+    font-size: 22px;
+    line-height: 24px;
+  }
+}

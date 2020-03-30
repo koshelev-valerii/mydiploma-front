@@ -1,0 +1,38 @@
+@import url(./__title/description__title.css);
+@import url(./__text/description__text.css);
+
+.about__description {
+  margin-top: 131px;
+  width: 600px;
+}
+
+@media screen and (max-width: 1440px) {
+  .about__description {
+    margin-top: 131px;
+    margin-right: 104px;
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .about__description {
+    margin-top: 40px;
+    margin-right: 40px;
+    width: 424px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .about__description {
+    margin-top: 24px;
+    margin-right: 24px;
+    width: 424px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .about__description {
+    margin: auto;
+    width: 90vw;
+  }
+}

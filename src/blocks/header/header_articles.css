@@ -1,0 +1,19 @@
+@import url(./__navi/header__navi_articles.css);
+@import url(./__title/header__title_articles.css);
+@import url(./__burger/header__burger.css);
+
+.header_articles {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px gray;
+  z-index: 2;
+}
+
+@media screen and (max-width: 650px) {
+  .header_articles {
+    height: 56px;
+    position: absolute;
+    top: 0;
+  }
+}

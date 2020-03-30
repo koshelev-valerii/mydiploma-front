@@ -1,0 +1,14 @@
+@import url(./__name/button-page__name.css);
+@import url(./__name/button-page__name_inactive.css);
+@import url(./__underline/button-page__underline.css);
+
+.navi__button-page {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}

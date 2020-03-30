@@ -87,18 +87,18 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: 'styles/[name].[contenthash].css',
     }),
-    // new HtmlWebpackPlugin({
-    //   inject: false,
-    //   hash: true,
-    //   template: './src/index.html',
-    //   filename: './index.html',
-    // }),
-    // new HtmlWebpackPlugin({
-    //   inject: false,
-    //   hash: true,
-    //   template: './src/articles/index.html',
-    //   filename: './articles/index.html',
-    // }),
+    new HtmlWebpackPlugin({
+      inject: false,
+      hash: true,
+      template: './src/index.html',
+      filename: './index.html',
+    }),
+    new HtmlWebpackPlugin({
+      inject: false,
+      hash: true,
+      template: './src/articles/index.html',
+      filename: './articles/index.html',
+    }),
     new WebpackMd5Hash(),
     new webpack.DefinePlugin({
       NODE_ENV: JSON.stringify(process.env.NODE_ENV),

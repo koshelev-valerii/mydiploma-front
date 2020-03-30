@@ -6,7 +6,7 @@
   "scripts": {
     "start": "cross-env NODE_ENV=production&rimraf dist && webpack --mode production",
     "deploy": "cross-env NODE_ENV=production gh-pages -d dist",
-    "dev": "cross-env ENV=development&webpack-dev-server --mode development --open --watch"
+    "dev": "cross-env ENV=development&webpack-dev-server --mode development --watch"
   },
   "repository": {
     "type": "git",

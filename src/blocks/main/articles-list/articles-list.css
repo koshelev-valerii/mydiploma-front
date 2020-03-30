@@ -1,0 +1,10 @@
+@import url(./__cards/articles-list__cards.css);
+@import url(./__title/articles-list__title.css);
+@import url(./__button/articles-list__button.css);
+@import url(./__circle-preloader/articles-list__circle-preloader.css);
+@import url(./__not-found/articles-list__not-found.css);
+
+.articles-list {
+  position: relative;
+  background-color: #F5F6F7;
+}

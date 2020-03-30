@@ -1,0 +1,15 @@
+@import url(./__content/search__content.css);
+@import url(./__bg/search__bg.css);
+
+.search {
+  position: relative;
+  width: 100%;
+  min-height: 576px;
+  background-color: rgba(29, 26, 26, 0.5);
+}
+
+@media screen and (max-width: 750px) {
+  .search {
+    min-height: 536px;
+  }
+}

@@ -1,8 +1,12 @@
 @import url(./vendor/normalize.css);
 @import url(./vendor/fonts.css);
-/* @import url(./blocks); */
+@import url(./blocks/blocks.css);
 
-* {
-  border: solid blue 1px;
-	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+.root {
+  position: relative;
+  width: 100%;
 }
+
+/* * {
+  border: solid blue 1px;
+} */

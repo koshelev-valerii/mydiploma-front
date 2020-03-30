@@ -1,0 +1,24 @@
+.content__subtitle {
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 24px;
+  width: 545px;
+  margin:  0;
+  padding: 0;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .content__subtitle {
+    width: 452px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .content__subtitle {
+    width: 288px;
+  }
+}

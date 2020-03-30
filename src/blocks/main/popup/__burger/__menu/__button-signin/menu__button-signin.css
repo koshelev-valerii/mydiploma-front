@@ -1,0 +1,14 @@
+.menu__button-signin {
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 24px;
+  height: 56px;
+  margin: 24px 0;
+  border: 1px solid #FFFFFF;
+  border-radius: 100px;
+  outline: none;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+
+}

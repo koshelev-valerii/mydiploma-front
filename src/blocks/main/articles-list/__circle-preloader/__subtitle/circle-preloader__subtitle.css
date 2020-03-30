@@ -1,0 +1,14 @@
+.circle-preloader__subtitle {
+  position: absolute;
+  bottom: 80px;
+  width: 220px;
+  left: calc((100vw - 220px) / 2);
+  margin: 0;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #B6BCBF;
+}

@@ -1,0 +1,45 @@
+@import url(./__date/description__date.css);
+@import url(./__source/description__source.css);
+@import url(./__text/description__text.css);
+@import url(./__name/description__name.css);
+
+.articles-card__description {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  height: calc(100% - 272px);
+  padding: 16px 22px;
+}
+
+@media screen and (max-width: 1300px) {
+  .articles-card__description  {
+    height: calc(100% - 234px);
+    padding: 16px 22px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .articles-card__description  {
+    height: calc(100% - 218px);
+    padding: 14px 16px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .articles-card__description  {
+    height: calc(100% - 204px);
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .articles-card__description {
+    height: calc(100% - 150px);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .articles-card__description {
+    height: calc(100% - 196px);
+  }
+}

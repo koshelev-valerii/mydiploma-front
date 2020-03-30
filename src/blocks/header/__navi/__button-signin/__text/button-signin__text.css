@@ -1,0 +1,14 @@
+.button-signin__text {
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 12px;
+}
+
+@media screen and (max-width: 1024px) {
+  .button-signin__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

@@ -1,0 +1,9 @@
+@import url(./preloader.css);
+@import url(./__subtitle/circle-preloader__subtitle.css);
+
+.articles-list__circle-preloader {
+    position: relative;
+    margin: 0;
+    height: 282px;
+    background-color: #F5F6F7;
+}

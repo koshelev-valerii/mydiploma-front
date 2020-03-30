@@ -1,0 +1,27 @@
+.title__text {
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(26, 27, 34, 0.5);
+  margin: 40px 0 28px 104px;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .title__text {
+    font-size: 14px;
+    line-height: 24px;
+    margin: 24px 0 16px 40px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .title__text {
+    width: 288px;
+    font-size: 12px;
+    line-height: 24px;
+    margin: 8px auto 16px;
+  }
+}

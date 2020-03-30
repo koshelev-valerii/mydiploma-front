@@ -1,0 +1,10 @@
+.button-signout__img {
+  width: 24px;
+  margin: 12px 19px 12px 12px;
+}
+
+@media screen and (max-width: 1024px) {
+  .button-signout__img {
+    margin: 8px 15px 8px 12px;
+  }
+}
