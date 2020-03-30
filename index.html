@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Diploma</title>
+  <base target="_blank">
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles/main.f3d1caa88fdf6c2b993e.css?c7e8b9b6c926386067a0" />
+</head>
+<body>
+  <div class="root">
+    <header class="header">
+      <div class="header__title">NewsExplorer</div>
+      <div class="header__navi">
+        <a class="navi__button-page">
+          <p class="button-page__name">Главная</p>
+          <div class="button-page__underline"></div>
+        </a>
+        <a class="navi__button-page" href="./articles/index.html">
+          <p class="button-page__name button-page__name_inactive">Сохранённые статьи</p>
+        </a>
+        <div class="navi__button-signin">
+          <p class="button-signin__text">Авторизоваться</p>
+        </div>
+
+        <!-- Здесь будет имя пользователя -->
+
+        <!-- <button class="navi__button-signout">
+          <p class="button-signout__text">Алехандро</p>
+          <img src="./images/logout.svg" alt="выход" class="button-signout__img">
+        </button> -->
+      </div>
+      <img class="header__burger" src="./images/burger.svg" alt="бургерное меню">
+    </header>
+
+    <!-- Бургерное меню -->
+
+    <!-- Кнопка выхода будет меняться при открытии, поэтому ее нет -->
+
+    <div id="burger" class="popup popup__burger">
+      <div class="popup__content-burger">
+        <div class="burger__menu">
+          <a class="menu__button-page" href="./index.html">Главная</a>
+          <a class="menu__button-page" href="./articles/index.html">Сохранённые статьи</a>
+          <button class="menu__button-signin">Авторизоваться</button>
+          <div class="menu__button-signout"><p class="button-signout__name">Алехандро </p><img src="./images/logout.svg" alt="выход" class="button-signout__img"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Конец меню -->
+
+    <main class="main">
+      <div class="search">
+        <div class="search__bg"></div>
+        <div class="search__content">
+          <h1 class="content__title">Что в мире творится?</h1>
+          <h2 class="content__subtitle">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</h2>
+          <div class="content__field">
+            <input type="text" class="field__input" placeholder="Введите тему новости">
+            <button class="field__button">Искать</button>
+          </div>
+        </div>
+      </div>
+      <div class="articles-list">
+
+        <!-- Прелоадер -->
+
+        <!-- <div <div class="articles-list__circle-preloader">
+          <i class="circle-preloader"></i>
+          <p class="circle-preloader__subtitle">Идет поиск новостей...</p>
+        </div> -->
+
+        <!-- Конец прелоадера -->
+
+        <!-- Ничего не найдено -->
+
+        <!-- <div class="articles-list__not-found">
+          <img class="not-found__img" src="./images/loupe.svg" alt="грустная лупа">
+          <h2 class="not-found__title">Ничего не найдено</h2>
+          <p class="not-found__subtitle">К сожалению по вашему запросу ничего не найдено.</p>
+        </div> -->
+
+        <!-- Конец Ничего не найдено -->
+
+        <!-- Блок карточек -->
+
+        <!-- <h2 class="articles-list__title">Результаты поиска</h2>
+        <div class="articles-list__cards">
+          <div class="articles-card">
+            <div class="articles-card__image" style="background-image: url('./images/Background.jpg')">
+              <button class="articles-card__save-icon"></button>
+              <div class="image__warning">Войдите, чтобы сохранять статьи</div>
+            </div>
+            <div class="articles-card__description">
+              <p class="description__date">2 августа, 2019</p>
+              <h3 class="description__name">Национальное достояние – парки</h3>
+              <p class="description__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+              <p class="description__source">Лента.ру</p>
+            </div>
+          </div>
+          <div class="articles-card">
+            <div class="articles-card__image" style="background-image: url('./images/Background.jpg')">
+              <button class="articles-card__save-icon"></button>
+              <div class="image__warning">Войдите, чтобы сохранять статьи</div>
+            </div>
+            <div class="articles-card__description">
+              <p class="description__date">2 августа, 2019</p>
+              <h3 class="description__name">Национальное достояние – парки</h3>
+              <p class="description__text">Здесь должен быть нормальный текст. В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+              <p class="description__source">Лента.ру</p>
+            </div>
+          </div>
+        </div>
+        <button class="articles-list__button">Показать еще</button>
+      </div> -->
+
+      <!-- Конец блока карточек -->
+
+      <div class="about">
+        <picture style="margin: 0;">
+          <source media="(max-width: 400px)" srcset="./images/Background.jpg">
+          <source media="(max-width: 800px)" srcset="./images/Background.jpg">
+          <img src="./images/Background.jpg" alt="Аватар пользователя" class="about__photo">
+        </picture>
+        <div class="about__description">
+          <h2 class="description__title">Об авторе</h2>
+          <p class="description__text">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.</p>
+          <p class="description__text">Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.</p>
+        </div>
+      </div>
+
+      <!-- Попап входа -->
+
+      <!-- <div id="signin" class="popup popup__signin">
+        <div class="popup__content">
+          <img src="./images/close.svg" alt="закрыть" class="popup__close popup__close-signin">
+          <h2 class="popup__title">Вход</h2>
+          <form class="popup__form" novalidate name="signin">
+            <div class="input-container">
+              <p class="input__title">Email</p>
+              <input id="email" type="email" required name="email" class="popup__input popup__input-signin1" placeholder="Введите email">
+              <span id="error-email" class="error-message"></span>
+            </div>
+            <div class="input-container">
+              <p class="input__title">Пароль</p>
+              <input id="password" type="text" required name="password" class="popup__input popup__input-signin2" placeholder="Введите пароль">
+              <span id="error-password" class="error-message"></span>
+            </div>
+              <button type class="button popup__button popup__button-signin">Войти</button>
+              <p class="button__subtitle">или <button class="open__register">Зарегистрироваться</button></p>
+          </form>
+        </div>
+      </div> -->
+
+      <!-- Конец попапа входа -->
+
+      <!-- Попап регистрации -->
+
+      <!-- <div id="register" class="popup popup__register">
+        <div class="popup__content">
+          <img src="./images/close.svg" alt="закрыть" class="popup__close popup__close-register">
+          <h2 class="popup__title">Регистрация</h2>
+          <form class="popup__form" novalidate name="register" >
+            <div class="input-container">
+              <p class="input__title">Email</p>
+              <input id="email" type="email" required name="email" class="popup__input popup__input-register1" placeholder="Введите email">
+              <span id="error-email" class="error-message"></span>
+            </div>
+            <div class="input-container">
+              <p class="input__title">Пароль</p>
+              <input id="password" type="text" required name="password" class="popup__input popup__input-signin2" placeholder="Введите пароль">
+              <span id="error-password" class="error-message"></span>
+            </div>
+            <div class="input-container">
+              <p class="input__title">Имя</p>
+              <input id="name" type="text" required name="name" minlength="2" maxlength="30" class="popup__input popup__input-register2 register__name" placeholder="Введите имя">
+              <span id="error-name" class="error-message"></span>
+            </div>
+            <button type class="button popup__button popup__button-register">Зарегистрироваться</button>
+            <p class="button__subtitle">или <button class="open__signin">Войти</button></p>
+          </form>
+        </div>
+      </div> -->
+
+      <!-- Конец попапа регистрации -->
+
+      <!-- Попап успеха -->
+
+      <!-- <div id="success" class="popup popup__success">
+        <div class="popup__content">
+            <img src="./images/close.svg" alt="закрыть" class="popup__close popup__close-avatar">
+            <h2 class="popup__title">Пользователь успешно зарегистрирован!</h2>
+            <button type class="button open__signin" style="font-size: 18px;">Выполнить вход</button>
+        </div>
+      </div> -->
+
+      <!-- Конец успеха -->
+      </div>
+    </main>
+    <footer class="footer">
+      <p class="footer__copyright">© 2020 Supersite, Powered by News API</p>
+      <ul class="footer__list">
+        <li class="list__link"><a class="link__item" href="./index.html">Главная</a></li>
+        <li class="list__link">
+          <a class="link__item" href="https://yandex.ru/">Яндекс</a><a class="link__item" href="https://praktikum.yandex.ru/">.Практикум</a>
+        </li>
+        <li class="list__link"><a href="https://github.com/koshelev-valerii"><img class="link__img" src="./images/github.svg" alt="гитхаб"></a></li>
+        <li class="list__link"><a href="mailto:koshelev177@gmail.com?subject=Сообщение с сайта mydiploma.website"><img class="link__img" src="./images/gmail.svg" alt="почта"></a></li>
+      </ul>
+    </footer>
+  </div>
+  <script type="module" src="js/main.1aa3f5c2ddfdb22918c7.js?c7e8b9b6c926386067a0"></script>
+</body>
+</html>
