@@ -13,25 +13,25 @@
   <div class="root">
     <header class="header">
       <div class="header__title">NewsExplorer</div>
-      <div class="header__navi">
-        <a class="navi__button-page">
-          <p class="button-page__name">Главная</p>
-          <div class="button-page__underline"></div>
-        </a>
-        <a class="navi__button-page" href="./articles/index.html">
-          <p class="button-page__name button-page__name_inactive">Сохранённые статьи</p>
-        </a>
-        <div class="navi__button-signin">
-          <p class="button-signin__text">Авторизоваться</p>
-        </div>
+      <ul class="header__navi">
+        <li class="navi__button-page"><a class="button-page__link">
+          <p class="link__name">Главная</p>
+          <div class="link__underline"></div>
+        </a></li>
+        <li class="navi__button-page"><a class="button-page__link" href="./articles/index.html">
+          <p class="link__name link__name_inactive">Сохранённые статьи</p>
+        </a></li>
+        <li class="navi__button-signin"><div class="button-signin__button">
+          <p class="button__text-signin">Авторизоваться</p>
+        </div></li>
 
         <!-- Здесь будет имя пользователя -->
 
-        <!-- <button class="navi__button-signout">
-          <p class="button-signout__text">Алехандро</p>
-          <img src="<%=require('./images/logout.svg').default%>" alt="выход" class="button-signout__img">
-        </button> -->
-      </div>
+        <!-- <li class="navi__button-signout"><div class="button-signout__button">
+          <p class="button__text-signout">Алехандро</p>
+          <img src="<%=require('./images/logout.svg').default%>" alt="выход" class="button__img">
+        </div></li> -->
+      </ul>
       <img class="header__burger" src="<%=require('./images/burger.svg').default%>" alt="бургерное меню">
     </header>
 
@@ -39,16 +39,16 @@
 
     <!-- Кнопка выхода будет меняться при открытии, поэтому ее нет -->
 
-    <div id="burger" class="popup popup__burger">
+    <!-- <div id="burger" class="popup popup__burger">
       <div class="popup__content-burger">
-        <div class="burger__menu">
-          <a class="menu__button-page" href="./index.html">Главная</a>
-          <a class="menu__button-page" href="./articles/index.html">Сохранённые статьи</a>
-          <button class="menu__button-signin">Авторизоваться</button>
-          <div class="menu__button-signout"><p class="button-signout__name">Алехандро </p><img src="<%=require('./images/logout.svg').default%>" alt="выход" class="button-signout__img"></div>
-        </div>
+        <ul class="burger__menu">
+          <li class="menu__element"><a class="menu__button-page" href="./index.html">Главная</a></li>
+          <li class="menu__element"><a class="menu__button-page" href="./articles/index.html">Сохранённые статьи</a></li>
+          <li class="menu__element"><div class="menu__button-signin"><p class="button-signin__name">Авторизоваться</p></div></li>
+          <li class="menu__element"><div class="menu__button-signout"><p class="button-signout__name">Алехандро </p><img src="<%=require('./images/logout.svg').default%>" alt="выход" class="button__img"></div></li>
+        </ul>
       </div>
-    </div>
+    </div> -->
 
     <!-- Конец меню -->
 
@@ -68,7 +68,7 @@
 
         <!-- Прелоадер -->
 
-        <!-- <div <div class="articles-list__circle-preloader">
+        <!-- <div class="articles-list__circle-preloader">
           <i class="circle-preloader"></i>
           <p class="circle-preloader__subtitle">Идет поиск новостей...</p>
         </div> -->
@@ -114,16 +114,16 @@
             </div>
           </div>
         </div>
-        <button class="articles-list__button">Показать еще</button>
-      </div> -->
+        <button class="articles-list__button">Показать еще</button> -->
+      </div>
 
       <!-- Конец блока карточек -->
 
       <div class="about">
-        <picture style="margin: 0;">
-          <source media="(max-width: 400px)" srcset="<%=require('./images/Background.jpg').default%>">
-          <source media="(max-width: 800px)" srcset="<%=require('./images/Background.jpg').default%>">
-          <img src="<%=require('./images/Background.jpg').default%>" alt="Аватар пользователя" class="about__photo">
+        <picture class="about__photo">
+          <source media="(min-width: 1024px)" srcset="<%=require('./images/pryanik-464.png').default%>">
+          <source media="(min-width: 650px)" srcset="<%=require('./images/pryanik-232.png').default%>">
+          <img src="<%=require('./images/pryanik-272.png').default%>" alt="Аватар пользователя" class="photo__img">
         </picture>
         <div class="about__description">
           <h2 class="description__title">Об авторе</h2>
@@ -132,7 +132,7 @@
         </div>
       </div>
 
-      <!-- Попап входа -->
+      <!--  Попап входа -->
 
       <!-- <div id="signin" class="popup popup__signin">
         <div class="popup__content">
@@ -142,12 +142,12 @@
             <div class="input-container">
               <p class="input__title">Email</p>
               <input id="email" type="email" required name="email" class="popup__input popup__input-signin1" placeholder="Введите email">
-              <span id="error-email" class="error-message"></span>
+              <span id="error-email" class="error-message">Здесь появится ошибка (реализую через js)</span>
             </div>
             <div class="input-container">
               <p class="input__title">Пароль</p>
               <input id="password" type="text" required name="password" class="popup__input popup__input-signin2" placeholder="Введите пароль">
-              <span id="error-password" class="error-message"></span>
+              <span id="error-password" class="error-message">Здесь появится ошибка (реализую через js)</span>
             </div>
               <button type class="button popup__button popup__button-signin">Войти</button>
               <p class="button__subtitle">или <button class="open__register">Зарегистрироваться</button></p>
@@ -167,19 +167,22 @@
             <div class="input-container">
               <p class="input__title">Email</p>
               <input id="email" type="email" required name="email" class="popup__input popup__input-register1" placeholder="Введите email">
-              <span id="error-email" class="error-message"></span>
+              <span id="error-email" class="error-message">Здесь появится ошибка (реализую через js)</span>
             </div>
             <div class="input-container">
               <p class="input__title">Пароль</p>
               <input id="password" type="text" required name="password" class="popup__input popup__input-signin2" placeholder="Введите пароль">
-              <span id="error-password" class="error-message"></span>
+              <span id="error-password" class="error-message">Здесь появится ошибка (реализую через js)</span>
             </div>
             <div class="input-container">
               <p class="input__title">Имя</p>
               <input id="name" type="text" required name="name" minlength="2" maxlength="30" class="popup__input popup__input-register2 register__name" placeholder="Введите имя">
-              <span id="error-name" class="error-message"></span>
+              <span id="error-name" class="error-message">Здесь появится ошибка (реализую через js)</span>
             </div>
-            <button type class="button popup__button popup__button-register">Зарегистрироваться</button>
+            <div>
+              <span id="error-user" class="error-message"><p id="error-user" class="error-message">Такой пользователь уже есть</p></span>
+              <button id="button-user" type class="button popup__button popup__button-register">Зарегистрироваться</button>
+            </div>
             <p class="button__subtitle">или <button class="open__signin">Войти</button></p>
           </form>
         </div>
@@ -198,7 +201,6 @@
       </div> -->
 
       <!-- Конец успеха -->
-      </div>
     </main>
     <footer class="footer">
       <p class="footer__copyright">© 2020 Supersite, Powered by News API</p>

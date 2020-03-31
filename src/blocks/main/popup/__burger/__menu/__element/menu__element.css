@@ -1,8 +1,7 @@
-@import url(./__button/button-signin__button.css);
-
-.navi__button-signin {
+.menu__element {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  width: 100%;
   box-sizing: border-box;
 }

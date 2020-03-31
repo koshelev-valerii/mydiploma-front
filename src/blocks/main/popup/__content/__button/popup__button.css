@@ -18,3 +18,7 @@
   border: none;
   outline: none;
 }
+
+.popup__button#button-user {
+  margin-top: 0;
+}

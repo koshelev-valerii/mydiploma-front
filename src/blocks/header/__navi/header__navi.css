@@ -4,7 +4,10 @@
 
 .header__navi {
   display: flex;
-  background-color: rgba(0, 0, 0, 0)
+  background-color: rgba(0, 0, 0, 0);
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 
 @media screen and (max-width: 660px) {

@@ -1,17 +1,15 @@
-.button-page__name {
+.link__name {
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
   color: #ffffff;
   font-size: 18px;
   line-height: 24px;
-  margin: 32px 16px 23px;
-  text-decoration: none;
+  margin: 0;
 }
 
 @media screen and (max-width: 1024px) {
-  .button-page__name {
+  .link__name {
     font-size: 16px;
     line-height: 24px;
-    margin: 26px 8px 17px;
   }
 }
 

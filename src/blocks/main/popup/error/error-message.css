@@ -1,12 +1,19 @@
 .error-message {
-    color: #FF3333;
-    font-size: 0.8em;
-    transition: .3s;
-    opacity: 0;
-  }
+  font-family: 'Inter', Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  padding: 3px 0 0 0;
+  color: #FF0000;
+  transition: .3s;
+}
+
+.error-message#error-user {
+  text-align: center;
+}
 
 .input-container__invalid .error-message {
-padding: 10px;
 opacity: 1;
 }
 

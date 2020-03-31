@@ -1,14 +1,9 @@
-@import url(./__name/button-page__name.css);
-@import url(./__name/button-page__name_inactive.css);
-@import url(./__underline/button-page__underline.css);
+@import url(./__link/button-page__link.css);
 
 .navi__button-page {
-  position: relative;
-  background-color: rgba(0, 0, 0, 0);
-  border: none;
-  outline: none;
-  cursor: pointer;
+  text-decoration: none;
+  list-style-type: none;
   margin: 0;
   padding: 0;
-  text-decoration: none;
+  box-sizing: border-box;
 }
