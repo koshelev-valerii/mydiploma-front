@@ -1,0 +1,26 @@
+.container.container_section_header {
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 0 104px;
+  height: 80px;
+  position: relative;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1024px) {
+  .container.container_section_header {
+    padding: 0 40px 0;
+    height: 64px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .container.container_section_header {
+    height: 56px;
+    padding: 0 16px;
+  }
+}

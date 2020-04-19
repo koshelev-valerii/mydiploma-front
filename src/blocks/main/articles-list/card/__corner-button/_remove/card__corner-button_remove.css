@@ -1,0 +1,17 @@
+.card__corner-button_remove {
+  background-image: url(../../../../../../images/icon/trash/delete.svg);
+}
+
+.card__corner-button_remove:hover {
+  background-image: url(../../../../../../images/icon/trash/deleteBlack.svg);
+}
+
+.card__corner-button_remove:focus {
+  background-image: url(../../../../../../images/icon/trash/deleteBlack.svg);
+}
+
+@media screen and (max-width: 1400px) {
+  .card__corner-button_remove:hover + .card__corner-label {
+    display: none;
+  }
+}

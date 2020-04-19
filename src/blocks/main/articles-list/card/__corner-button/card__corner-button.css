@@ -1,0 +1,49 @@
+.card__corner-button {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 10px;
+  color: black;
+  background-color: white;
+  background-image: url(../../../../../images/icon/bookmark/bookmark.svg);
+  background-position: center;
+  background-size: initial;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.card__corner-button_unsaved:hover {
+  background-image: url(../../../../../images/icon/bookmark/bookmark-hover.svg);
+}
+
+.card__corner-button_saved {
+  background-image: url(../../../../../images/icon/bookmark/bookmark-focus.svg);
+  cursor: default;
+}
+
+.card__corner-button_saved:hover {
+  background-image: url(../../../../../images/icon/bookmark/bookmark-focus.svg);
+}
+
+.card__corner-button_remove:hover + .card__corner-label {
+  display: block;
+}
+
+@media screen and (max-width: 1024px) {
+  .card__corner-button {
+    top: 8px;
+    right: 8px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .card__corner-button {
+    top: 16px;
+    right: 16px;
+  }
+}

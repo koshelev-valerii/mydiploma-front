@@ -1,0 +1,24 @@
+.card__image {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  min-height: 272px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .card__image {
+    min-height: 150px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .card__image {
+    min-height: 196px;
+  }
+}

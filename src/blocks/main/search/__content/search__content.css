@@ -5,7 +5,7 @@
 .search__content {
   width: 608px;
   margin: 0 auto 80px;
-  padding-top: 160px;
+  padding-top: 80px;
 }
 
 
@@ -17,7 +17,7 @@
 
 @media screen and (max-width: 650px) {
   .search__content {
-    padding-top: 86px;
+    padding-top: 46px;
     width: 288px;
   }
 }

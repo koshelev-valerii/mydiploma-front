@@ -1,0 +1,17 @@
+.article-info__subtitle {
+  display: block;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(26, 27, 34, 0.5);
+  margin-bottom: 28px;
+}
+
+@media screen and (max-width: 426px) {
+  .article-info__subtitle {
+    font-size: 12px;
+    margin-bottom: 16px;
+  }
+}

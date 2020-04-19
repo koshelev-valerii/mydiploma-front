@@ -1,3 +1,20 @@
 .popup.popup_is-opened {
   display: flex;
 }
+
+@media screen and (max-width: 660px) {
+  .popup.popup_is-opened {
+    height: 10%;
+    align-items: flex-start;
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .popup.popup_is-opened {
+    background-color: rgba(0, 0, 0, 0);
+    margin: 56px 0 0;
+    padding: 0;
+    align-items: flex-start;
+  }
+}

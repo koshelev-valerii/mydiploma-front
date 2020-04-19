@@ -4,7 +4,9 @@
   width: 100%;
   min-height: 576px;
   margin: 0;
+  background-blend-mode: multiply;
   background-image: url(../../../../images/Background.jpg);
+  background-color: rgba(29, 26, 26, 0.5);
   background-size: cover;
   background-position: center;
   z-index: -1;

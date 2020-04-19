@@ -1,0 +1,24 @@
+.container {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  box-sizing: border-box;
+  padding: 80px 104px;
+}
+
+.container.container_section_results {
+  display: block;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 46px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .container {
+    padding: 10px;
+  }
+}

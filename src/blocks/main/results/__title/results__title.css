@@ -1,0 +1,19 @@
+.results__title {
+  font-family: Roboto Slab, Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  line-height: 1.15;
+  margin: 0 0 64px;
+}
+
+@media screen and (max-width: 768px) {
+  .results__title {
+    font-size: 30px;
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .results__title {
+    margin-bottom: 24px;
+  }
+}

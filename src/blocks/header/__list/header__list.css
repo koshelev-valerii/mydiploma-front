@@ -1,0 +1,34 @@
+@import url(./_is-active/header__list_is-active.css);
+
+.header__list {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  list-style-type: none;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 660px) {
+  .header__list {
+    display: none;
+    position: absolute;
+    top: 57px;
+    right: 0;
+    left: 0;
+    z-index: 5;
+    padding: 32px 16px 24px;
+    height: auto;
+    cursor: default;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .header__list_black {
+    background-color: #1a1b22;
+  }
+
+  .header__list_white {
+    background-color: #ffffff;
+    border-bottom: 1px solid #d1d2d6;
+  }
+}
