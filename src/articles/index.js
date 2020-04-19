@@ -1,5 +1,4 @@
 import './style.css';
-
 import config from '../js/constants/config';
 import errors from '../js/constants/errors';
 
@@ -85,6 +84,7 @@ const cornerButtonHandler = (e, card, data) => {
 };
 
 results.show();
+
 mainApi
   .getArticles()
   .then((res) => {
