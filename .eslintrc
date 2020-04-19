@@ -1,7 +1,30 @@
 {
   "extends": "airbnb-base",
   "rules": {
-    "no-console": "off",
-    "global-require": "off"
+    "linebreak-style": 0,
+    "no-underscore-dangle": "off",
+    "no-plusplus": [
+      "error",
+      {
+        "allowForLoopAfterthoughts": true
+      }
+    ],
+    "no-param-reassign": [
+      "error",
+      {
+        "props": false
+      }
+    ],
+    "no-unused-expressions": [
+      "error",
+      {
+        "allowTernary": true
+      }
+    ]
+    },
+    "env": {
+      "browser": true,
+      "node": true,
+      "jasmine": true
     }
 }
