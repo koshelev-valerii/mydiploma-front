@@ -1,0 +1,4 @@
+.not-found__img {
+  margin-left: calc((100vw - 96px) / 2);
+  margin-top: 80px;
+}

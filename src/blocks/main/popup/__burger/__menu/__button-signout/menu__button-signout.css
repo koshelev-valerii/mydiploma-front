@@ -1,0 +1,14 @@
+@import url(./button-signout__name/button-signout__name.css);
+
+.menu__button-signout {
+  height: 56px;
+  margin: 24px 0;
+  border: 1px solid #FFFFFF;
+  border-radius: 100px;
+  outline: none;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}

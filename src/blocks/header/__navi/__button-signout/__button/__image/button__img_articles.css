@@ -1,0 +1,17 @@
+.button__img_articles {
+  width: 24px;
+  height: 24px;
+  margin: auto 19px auto 12px;
+}
+
+@media screen and (max-width: 1024px) {
+  .button__img_articles {
+    margin: auto 15px auto 12px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .button__img_articles {
+    margin: auto 0 auto 12px;
+}
+}

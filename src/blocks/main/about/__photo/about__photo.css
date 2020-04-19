@@ -1,0 +1,29 @@
+@import url(./__img/photo__img.css);
+
+.about__photo {
+  margin: 80px 80px 80px 104px;
+}
+
+@media screen and (max-width: 1440px) {
+  .about__photo {
+    margin: 80px 56px 80px 104px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .about__photo {
+    margin: 61px 32px 61px 104px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .about__photo {
+    margin: 32px 24px 24px 40px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .about__photo {
+    margin: 0 calc((90vw - 272px) / 2) 24px;
+  }
+}

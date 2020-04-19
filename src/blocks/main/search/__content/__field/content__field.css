@@ -1,0 +1,25 @@
+@import url(./__button/field__button.css);
+@import url(./__input/field__input.css);
+
+.content__field {
+  position: relative;
+  width: 608px;
+  height: 64px;
+  background-color: #ffffff;
+  border-radius: 100px;
+  margin-top: 64px;
+}
+
+@media screen and (max-width: 1024px) {
+  .content__field {
+    width: 452px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .content__field {
+    height: 56px;
+    margin-top: 122px;
+    width: 288px;
+  }
+}

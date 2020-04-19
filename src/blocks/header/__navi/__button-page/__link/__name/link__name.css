@@ -1,0 +1,15 @@
+.link__name {
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .link__name {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+

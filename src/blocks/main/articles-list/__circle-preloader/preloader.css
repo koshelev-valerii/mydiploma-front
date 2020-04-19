@@ -1,0 +1,21 @@
+.circle-preloader {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 2px solid rgba(37, 37, 37, 0.65);
+    border-bottom-color: rgba(105, 105, 105, 0.541);
+
+    border-radius: 50%;
+
+    position: absolute;
+    bottom: 128px;
+    left: calc((100vw - 54px) / 2);
+
+    animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+    100% {
+      transform: rotate(360deg);
+    }
+}
