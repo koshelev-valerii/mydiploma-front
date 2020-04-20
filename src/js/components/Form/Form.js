@@ -78,7 +78,9 @@ export default class Form extends BaseComponent {
   }
 
   setSubmitError(err) {
-    this._element.querySelector('.error-message_submit').textContent = err;
+    if (this._element.querySelector('.error-message_submit')) {
+      this._element.querySelector('.error-message_submit').textContent = err;
+    }
   }
 
   clear() {

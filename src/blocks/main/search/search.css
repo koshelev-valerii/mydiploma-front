@@ -4,3 +4,9 @@
 .search {
   width: 100%;
 }
+
+@media screen and (max-width: 650px) {
+  .search {
+    min-height: 536px;
+  }
+}
