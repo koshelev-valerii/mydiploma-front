@@ -13,7 +13,7 @@
   <base target="_blank">
   <link
     rel="stylesheet"
-    href="styles/main.85ba37a71e2da2bbcf05.css"
+    href="styles/main.94ce0e7dda89da377739.css"
   />
   <link
     rel="shortcut icon"
@@ -38,7 +38,7 @@
               <ul class="header__list header__list_black">
                 <li class="header__list-item">
                   <div class="header__item-wrapper">
-                    <a href="./" class="header__link">Главная</a>
+                    <a href="./index.html" class="header__link"  target="_parent">Главная</a>
                     <div
                       class="header__link-underline header__link-underline_active"
                     ></div>
@@ -46,7 +46,7 @@
                 </li>
                 <li class="header__list-item header__list-item_articles">
                   <div class="header__item-wrapper">
-                    <a href="./articles/index.html" class="header__link">
+                    <a href="./articles/index.html" class="header__link" target="_parent">
                       Сохранённые статьи
                     </a>
                     <div class="header__link-underline"></div>
@@ -134,11 +134,14 @@
           <source
             media="(min-width: 1024px)"
             srcset="./images/pryanik-464.png"
+            class="photo__img"
             alt="Фото автора"
           />
           <source
             media="(min-width: 650px)"
             srcset="./images/pryanik-232.png"
+            class="photo__img"
+            alt="Фото автора"
           />
           <img
             src="./images/pryanik-272.png"
@@ -153,15 +156,15 @@
           </p>
           <p class="description__text">
             Это сервис для поиска новостей по всему этому нашему Интернету. Ты можешь найти новость по
-            ключевому слову и сохранить её к себе в личный кабинет, что бы перечитать перед сном.)
+            ключевому слову и сохранить её к себе в личный кабинет, чтобы перечитать перед сном.)
           </p>
           <p class="description__text">
             Я прошел курс "Веб-разработчик" в Яндекс.Практикуме.
-            Для реализации сайта я использовал огромное колличество информации, данной мне кураторами.
+            Для реализации сайта я использовал огромное количество информации, данной мне кураторами.
           </p>
           <p class="description__text">
             Фронтенд часть данного проекта реализована с использованием
-            HTML, CSS и нативного JavaScript. Бэкенд часть - на Node.js
+            HTML, CSS и нативного JavaScript. Бэкенд часть на Node.js
             - Express.js и MongoDB. Добро пожаловать!
           </p>
         </div>
@@ -292,7 +295,7 @@
                 minlength="8"
                 placeholder="Введите пароль"
               />
-              <span id="error-password" class="error-message"></span>
+              <span id="error-password" class="error-message error-message_submit"></span>
             </div>
               <button
                 class="popup__form-button"
@@ -348,7 +351,7 @@
       <p class="footer__copyright">© 2020 Valerii Koshelev, Powered by News API</p>
       <ul class="footer__list">
         <li class="list__link">
-          <a class="link__item" href="./index.html">
+          <a class="link__item" href="./index.html"  target="_parent">
             Главная
           </a>
         </li>
