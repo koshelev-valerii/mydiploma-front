@@ -19,7 +19,7 @@
 @media screen and (max-width: 650px) {
   .content__field {
     height: 56px;
-    margin-top: 122px;
+    margin: 122px auto 104px;
     width: 288px;
   }
 }

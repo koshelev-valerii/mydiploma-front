@@ -1,0 +1,11 @@
+@import url(./_is-active/header__button-icon_is-active.css);
+@import url(./_state_login/header__button-icon_state_login.css);
+
+.header__button-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 8px;
+  display: none;
+  background-image: url(../../../images/icon/logout/logout.svg);
+  background-repeat: no-repeat;
+}

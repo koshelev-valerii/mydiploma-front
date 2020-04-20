@@ -1,22 +1,15 @@
+@import url(./_submit/error-message_submit.css);
+
 .error-message {
   font-family: 'Inter', Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
-  padding: 3px 0 0 0;
-  color: #FF0000;
-  transition: .3s;
-}
-
-.error-message#error-user {
-  text-align: center;
-}
-
-.input-container__invalid .error-message {
-opacity: 1;
-}
-
-.input-container__invalid .input__text {
-border-color: #FF3333;
+  display: block;
+  color: red;
+  font-size: 14px;
+  line-height: 17px;
+  height: 18px;
+  margin-bottom: 14px;
 }

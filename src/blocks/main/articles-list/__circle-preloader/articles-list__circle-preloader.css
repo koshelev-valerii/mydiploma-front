@@ -1,9 +1,9 @@
 @import url(./preloader.css);
 @import url(./__subtitle/circle-preloader__subtitle.css);
+@import url(./_is-active/preloader_is-active.css);
 
 .articles-list__circle-preloader {
-    position: relative;
-    margin: 0;
-    height: 282px;
-    background-color: #F5F6F7;
+  display: none;
+  padding: 80px;
+  justify-content: center;
 }

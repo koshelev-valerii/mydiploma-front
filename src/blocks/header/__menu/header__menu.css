@@ -1,0 +1,22 @@
+@import url(./_is-active_black/header__menu_is-active_black.css);
+@import url(./_is-active_white/header__menu_is-active_white.css);
+
+@media screen and (max-width: 660px) {
+  .header__menu {
+    width: 24px;
+    height: 24px;
+    margin: auto;
+    cursor: pointer;
+  }
+}
+
+
+@media screen and (max-width: 660px) {
+  .header__menu_white {
+    background-image: url(../../../images/icon/menu/burger.svg);
+  }
+
+  .header__menu_black {
+    background-image: url(../../../images/icon/menu/burgerBlack.svg);
+  }
+}

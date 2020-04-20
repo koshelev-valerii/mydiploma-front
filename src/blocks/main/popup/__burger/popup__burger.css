@@ -1,9 +1,0 @@
-@import url(./__menu/burger__menu.css);
-
-@media screen and (max-width: 660px) {
-  .popup__burger {
-    width: 100%;
-    max-width: 100vw;
-    max-height: 300px;
-  }
-}

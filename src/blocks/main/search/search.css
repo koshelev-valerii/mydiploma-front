@@ -2,14 +2,11 @@
 @import url(./__bg/search__bg.css);
 
 .search {
-  position: relative;
   width: 100%;
-  min-height: 576px;
-  background-color: rgba(29, 26, 26, 0.5);
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 650px) {
   .search {
-    min-height: 536px;
+    min-height: 546px;
   }
 }

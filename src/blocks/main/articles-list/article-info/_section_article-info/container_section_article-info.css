@@ -1,0 +1,10 @@
+.container.container_section_article-info {
+  display: block;
+  padding: 40px 104px 56px;
+}
+
+@media screen and (max-width: 650px) {
+  .container.container_section_article-info {
+    padding: 8px 16px 32px;
+  }
+}

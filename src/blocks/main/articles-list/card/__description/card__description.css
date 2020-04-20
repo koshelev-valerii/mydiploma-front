@@ -1,0 +1,8 @@
+.card__description {
+  width: 100%;
+  height: 304px;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}

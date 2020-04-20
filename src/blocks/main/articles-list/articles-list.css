@@ -1,8 +1,7 @@
-@import url(./__cards/articles-list__cards.css);
-@import url(./__title/articles-list__title.css);
-@import url(./__button/articles-list__button.css);
 @import url(./__circle-preloader/articles-list__circle-preloader.css);
 @import url(./__not-found/articles-list__not-found.css);
+@import url(./article-info/article-info.css);
+@import url(./card/card.css);
 
 .articles-list {
   position: relative;

@@ -1,9 +1,6 @@
 .circle-preloader__subtitle {
-  position: absolute;
-  bottom: 80px;
+  margin: 24px auto 0;
   width: 220px;
-  left: calc((100vw - 220px) / 2);
-  margin: 0;
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;

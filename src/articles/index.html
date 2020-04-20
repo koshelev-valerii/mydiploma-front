@@ -4,135 +4,187 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta
+    name="description"
+    content="NewsExplorer - сервис поиска новостей в Интернет-СМИ по ключевому слову"
+  />
+
+  <meta name="author" content="Valerii Koshelev">
   <title>Articles</title>
   <base target="_blank">
-  <link rel="shortcut icon" href="../<%=require('../images/favicon.ico').default%>" type="image/x-icon">
-  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>" />
+  <link
+    rel="stylesheet"
+    href="<%=htmlWebpackPlugin.files.chunks.main.css %>"
+  />
+  <link
+    rel="shortcut icon"
+    href="../<%=require('../images/favicon.ico').default%>"
+    type="image/x-icon"
+  />
 </head>
+
 <body>
   <div class="root">
-    <header class="header_articles">
-      <div class="header__title header__title_articles">NewsExplorer</div>
-      <ul class="header__navi header__navi_articles">
-        <li class="navi__button-page navi__button-page_articles"><a class="button-page__link button-page__link_articles"  href="../index.html">
-          <p class="link__name link__name_articles link__name__name_inactive">Главная</p>
-        </a></li>
-        <li class="navi__button-page navi__button-page_articles"><a class="button-page__link button-page__link_articles">
-          <p class="link__name link__name_articles">Сохранённые статьи</p>
-          <div class="link__underline link__underline_articles"></div>
-        </a></li>
-        <li class="navi__button-signout navi__button-signout_articles"><div class="button-signout__button button-signout__button_articles">
-          <p class="button__text-signout button__text-signout_articles">Алехандро</p>
-          <img src="../<%=require('../images/logoutBlack.svg').default%>" alt="выход" class="button__img_articles">
-        </div></li>
-      </ul>
-      <img class="header__burger" src="../<%=require('../images/burgerBlack.svg').default%>" alt="бургерное меню">
-    </header>
 
-    <!-- Бургерное меню -->
+    <!-- Header -->
 
-    <!-- Кнопка выхода будет меняться при открытии, поэтому ее нет -->
-<!--
-    <div id="burger" class="popup popup__burger">
-      <div class="popup__content-burger">
-        <ul class="burger__menu">
-          <li class="menu__element"><a class="menu__button-page" href="../index.html">Главная</a></li>
-          <li class="menu__element"><a class="menu__button-page" href="./index.html">Сохранённые статьи</a></li>
-          <li class="menu__element"><div class="menu__button-signout"><p class="button-signout__name">Алехандро </p><img src="../<%=require('../images/logout.svg').default%>" alt="выход" class="button__img"></div></li>
-        </ul>
-      </div>
-    </div> -->
-
-    <!-- Конец меню -->
-
-    <main class="main">
-      <div class="title">
-        <p class="title__text">Сохранённые статьи</p>
-        <h1 class="title__title">Алехандро, у вас 5 сохранённых статей</h1>
-        <h2 class="title__subtitle">По ключевым словам: <b>Природа, Тайга и 2 другим</b></h2>
-      </div>
-      <div class="articles-list">
-        <div class="articles-list__cards">
-          <div class="articles-card">
-            <div class="articles-card__image" style="background-image: url('../images/Background.jpg')">
-              <div class="articles-card__topic"><p class="topic__theme">Природа</p></div>
-              <button class="articles-card__delete-icon"></button>
-              <div class="image__warning">Убрать из сохранённых</div>
-            </div>
-            <div class="articles-card__description">
-              <p class="description__date">2 августа, 2019</p>
-              <h3 class="description__name">Национальное достояние – парки</h3>
-              <p class="description__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-              <p class="description__source">Лента.ру</p>
-            </div>
-          </div>
-          <div class="articles-card">
-            <div class="articles-card__image" style="background-image: url('../images/Background.jpg')">
-              <div class="articles-card__topic"><p class="topic__theme">Природа</p></div>
-              <button class="articles-card__delete-icon"></button>
-              <div class="image__warning">Убрать из сохранённых</div>
-            </div>
-            <div class="articles-card__description">
-              <p class="description__date">2 августа, 2019</p>
-              <h3 class="description__name">Национальное достояние – парки</h3>
-              <p class="description__text">Здесь должен быть нормальный текст. В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-              <p class="description__source">Лента.ру</p>
-            </div>
-          </div>
-          <div class="articles-card">
-            <div class="articles-card__image" style="background-image: url('../images/Background.jpg')">
-              <div class="articles-card__topic"><p class="topic__theme">Природа</p></div>
-              <button class="articles-card__delete-icon"></button>
-              <div class="image__warning">Убрать из сохранённых</div>
-            </div>
-            <div class="articles-card__description">
-              <p class="description__date">2 августа, 2019</p>
-              <h3 class="description__name">Национальное достояние – парки</h3>
-              <p class="description__text">Здесь должен быть нормальный текст. В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-              <p class="description__source">Лента.ру</p>
-            </div>
-          </div>
-          <div class="articles-card">
-            <div class="articles-card__image" style="background-image: url('../images/Background.jpg')">
-              <div class="articles-card__topic"><p class="topic__theme">Природа</p></div>
-              <button class="articles-card__delete-icon"></button>
-              <div class="image__warning">Убрать из сохранённых</div>
-            </div>
-            <div class="articles-card__description">
-              <p class="description__date">2 августа, 2019</p>
-              <h3 class="description__name">Национальное достояние – парки</h3>
-              <p class="description__text">Здесь должен быть нормальный текст. В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-              <p class="description__source">Лента.ру</p>
-            </div>
-          </div>
-          <div class="articles-card">
-            <div class="articles-card__image" style="background-image: url('../images/Background.jpg')">
-              <div class="articles-card__topic"><p class="topic__theme">Природа</p></div>
-              <button class="articles-card__delete-icon"></button>
-              <div class="image__warning">Убрать из сохранённых</div>
-            </div>
-            <div class="articles-card__description">
-              <p class="description__date">2 августа, 2019</p>
-              <h3 class="description__name">Национальное достояние – парки</h3>
-              <p class="description__text">Здесь должен быть нормальный текст. В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-              <p class="description__source">Лента.ру</p>
-            </div>
-          </div>
+    <header class="header header_state_login">
+      <div class="container container_section_header">
+        <div class="header__item-wrapper">
+          <span class="header__logo">NewsExplorer</span>
+        </div>
+        <div class="header__item-wrapper">
+          <nav class="header__menu header__menu_black" tabindex="0">
+            <div class="header__menu-overlay"></div>
+            <ul class="header__list  header__list_white">
+              <li class="header__list-item">
+                <div class="header__item-wrapper">
+                  <a href="../" class="header__link header__link_state_login"  target="_parent"
+                    >Главная</a
+                  >
+                  <div
+                    class="header__link-underline header__link-underline_state_login"
+                  ></div>
+                </div>
+              </li>
+              <li class="header__list-item header__list-item_articles">
+                <div class="header__item-wrapper">
+                  <a href="/" class="header__link header__link_state_login"  target="_parent"
+                    >Сохранённые статьи</a
+                  >
+                  <div class="header__link-underline header__link-underline_state_login header__link-underline_active"></div>
+                </div>
+              </li>
+              <li class="header__list-item">
+                <div class="header__item-wrapper">
+                  <button class="header__button header__button_state_login">
+                    <span class="header__button-text"></span>
+                    <i
+                      class="header__button-icon header__button-icon_is-active header__button-icon_state_login"
+                    ></i>
+                  </button>
+                </div>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
+    </header>
+
+    <!-- Конец header -->
+
+    <main class="main">
+
+      <!-- Меню карточек -->
+
+      <section class="article-info">
+        <div class="container container_section_article-info">
+          <span class="article-info__subtitle">Сохранённые статьи</span>
+          <h2 class="article-info__title">
+            <span class="article-info__name"></span>, у вас
+            <span class="article-info__counter">нет</span
+            ><span class="article-info__saved"> сохранённых статей</span>
+          </h2>
+          <p class="article-info__text">
+            По ключевым словам:
+            <span class="article-info__keywords"></span>
+          </p>
+        </div>
+      </section>
+
+      <!-- Конец меню карточек -->
+
+      <!-- Блок карточек -->
+
+      <section class="results">
+        <div class="container container_section_results">
+          <div class="results__list results__list_articles"></div>
+          <div class="articles-list__circle-preloader">
+            <i class="circle-preloader"></i>
+            <p class="circle-preloader__subtitle">Загружаем ваши новости...</p>
+          </div>
+          <span class="results__message"></span>
+        </div>
+      </section>
+
+      <!-- Конец блока карточек -->
+
+      <!-- Голый попап -->
+
+      <div class="popup"></div>
+      </div>
+
+      <!-- Конец попапа -->
+
+      <!-- Голая карточка -->
+
+      <template class="card-bookmark-template">
+        <div class="card__wrapper">
+          <div class="card">
+            <div class="card__image">
+              <div class="card__keyword"></div>
+              <button
+                class="card__corner-button card__corner-button_remove"
+              ></button>
+              <div class="card__corner-label">Убрать из сохранённых</div>
+            </div>
+            <div class="card__description">
+              <span class="card__date"></span>
+              <h3 class="card__title"></h3>
+              <div class="card__text-wrapper">
+                <p class="card__text"></p>
+              </div>
+            </div>
+            <span class="card__source"></span>
+          </div>
+        </div>
+      </template>
+
+      <!-- Конец карточке -->
+
     </main>
+
+    <!-- Футер -->
+
     <footer class="footer">
-      <p class="footer__copyright">© 2020 Supersite, Powered by News API</p>
+      <p class="footer__copyright">© 2020 Valerii Koshelev, Powered by News API</p>
       <ul class="footer__list">
-        <li class="list__link"><a class="link__item" href="../index.html">Главная</a></li>
         <li class="list__link">
-          <a class="link__item" href="https://yandex.ru/">Яндекс</a><a class="link__item" href="https://praktikum.yandex.ru/">.Практикум</a>
+          <a class="link__item" href="../index.html"  target="_parent">
+            Главная
+          </a>
         </li>
-        <li class="list__link"><a href="https://github.com/koshelev-valerii"><img class="link__img" src="../<%=require('../images/github.svg').default%>" alt="гитхаб"></a></li>
-        <li class="list__link"><a href="mailto:koshelev177@gmail.com?subject=Сообщение с сайта mydiploma.website"><img class="link__img" src="../<%=require('../images/gmail.svg').default%>" alt="почта"></a></li>
+        <li class="list__link">
+          <a class="link__item" href="https://yandex.ru/">
+            Яндекс.</a>
+          <a class="link__item" href="https://praktikum.yandex.ru/">
+            Практикум
+          </a>
+        </li>
+        <li class="list__link">
+          <a href="https://github.com/koshelev-valerii">
+            <img
+              class="link__img"
+              src="../<%=require('../images/icon/social/github.svg').default%>"
+              alt="гитхаб"
+            />
+          </a>
+        </li>
+        <li class="list__link">
+          <a href="mailto:koshelev177@gmail.com?subject=Сообщение с сайта mydiploma.website">
+            <img
+              class="link__img"
+              src="../<%=require('../images/icon/social/gmail.svg').default%>"
+              alt="почта"
+            />
+          </a>
+        </li>
       </ul>
     </footer>
+
+    <!-- И футеру тоже конец -->
+
   </div>
-  <script type="module" src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+  <script type="module" src="<%= htmlWebpackPlugin.files.chunks.articles.entry %>"></script>
 </body>
 </html>

@@ -89,13 +89,11 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       inject: false,
-      hash: true,
       template: './src/index.html',
-      filename: './index.html',
+      filename: 'index.html',
     }),
     new HtmlWebpackPlugin({
       inject: false,
-      hash: true,
       template: './src/articles/index.html',
       filename: './articles/index.html',
     }),

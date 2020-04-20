@@ -18,8 +18,8 @@
 }
 
 .input__title {
-  margin-top: 26px;
-  margin-bottom: 0;
+  margin-bottom: 10px;
+  display: inline-block;
   font-family: 'Inter', Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
