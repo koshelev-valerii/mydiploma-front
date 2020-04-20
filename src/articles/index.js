@@ -89,7 +89,7 @@ mainApi
   .getArticles()
   .then((res) => {
     results.togglePreloader(false);
-    res.data.forEach((cardData) => {
+    res.forEach((cardData) => {
       articleInfo.createSummary(cardData.keyword);
 
       const newsCardElement = new NewsCard(cardData, '.card-bookmark-template');

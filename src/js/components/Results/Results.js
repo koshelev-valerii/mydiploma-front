@@ -65,7 +65,6 @@ export default class Results extends BaseComponent {
   }
 
   setMessageError(message) {
-    console.log(message);
     this._message.textContent = message;
   }
 }

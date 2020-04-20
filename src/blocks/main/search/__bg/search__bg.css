@@ -11,9 +11,3 @@
   background-position: center;
   z-index: -1;
 }
-
-@media screen and (max-width: 750px) {
-  .search__bg {
-    min-height: 536px;
-  }
-}
