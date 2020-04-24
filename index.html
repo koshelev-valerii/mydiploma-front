@@ -135,13 +135,11 @@
             media="(min-width: 1024px)"
             srcset="./images/pryanik-464.png"
             class="photo__img"
-            alt="Фото автора"
           />
           <source
             media="(min-width: 650px)"
             srcset="./images/pryanik-232.png"
             class="photo__img"
-            alt="Фото автора"
           />
           <img
             src="./images/pryanik-272.png"
@@ -201,7 +199,7 @@
                 pattern="[\w\-\.]{2,}@[\w-]{2,}(\.[\w-]{2,})?\.[\w-]{2,}"
                 placeholder="Введите email"
               />
-              <span id="error-email" class="error-message"></span>
+              <span class="error-message"></span>
             </div>
             <div class="input-container">
               <label for="password" class="input__title">Пароль</label>
@@ -214,7 +212,7 @@
                 class="popup__input"
                 placeholder="Введите пароль"
               />
-              <span id="error-password" class="error-message"></span>
+              <span class="error-message"></span>
             </div>
             <div class="input-container">
               <label for="username" class="input__title">Имя</label>
@@ -242,7 +240,7 @@
             </div>
             <p class="button__subtitle">
               или
-              <button id="open-login-button" class="open__signin switch-link">
+              <button class="open__signin switch-link">
                 Войти
               </button>
             </p>
@@ -257,7 +255,7 @@
       <template id="popup-success">
         <div class="form popup__success">
             <h3 class="popup__title">Пользователь успешно зарегистрирован!</h3>
-            <button id="open-login-button" class="open__signin switch-link" style="font-size: 18px;">
+            <button class="open__signin switch-link" style="font-size: 18px;">
               Выполнить вход
             </button>
         </div>
@@ -282,7 +280,7 @@
                 placeholder="Введите email"
                 pattern="[\w\-\.]{2,}@[\w-]{2,}(\.[\w-]{2,})?\.[\w-]{2,}"
               />
-              <span id="error-email" class="error-message"></span>
+              <span class="error-message"></span>
             </div>
             <div class="input-container">
               <label for="password" class="input__title">Пароль</label>
@@ -295,7 +293,7 @@
                 minlength="8"
                 placeholder="Введите пароль"
               />
-              <span id="error-password" class="error-message error-message_submit"></span>
+              <span class="error-message error-message_submit"></span>
             </div>
               <button
                 class="popup__form-button"
