@@ -1,6 +1,6 @@
 {
   "name": "mydiploma-front",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "The package is a Yandex Praktikum project that contains the implementation of the frontend part of the my diploma",
   "main": "./src/main/index.js",
   "scripts": {
