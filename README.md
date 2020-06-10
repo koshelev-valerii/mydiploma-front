@@ -1,7 +1,7 @@
 # MyDiploma-Front author Valerii Koshelev
 -------------------------------
 
-### Version 1.1.0
+### Version 1.2.0
 
 ## Description
 -------------------------------
@@ -12,8 +12,6 @@
 -------------------------------
 
 ### [Link to the project](https://koshelev-valerii.github.io/mydiploma-front/) on gh-pages
-
-`84.201.143.163` (ip)
 
 `https://mydiploma.website/` (domain for front part)
 
