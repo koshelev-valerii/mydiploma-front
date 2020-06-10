@@ -1,6 +1,6 @@
 import config from '../../constants/config';
 
-const { ONE_DAY } = config;
+const { ONE_DAY, NEWSAPI_TOKEN } = config;
 
 export default class NewsApi {
   constructor(options) {
@@ -25,7 +25,7 @@ export default class NewsApi {
   }
 
   getNews(input) {
-    return fetch(`${this._url}/?q=${input}${this._getDates()}&pageSize=100`, {
+    return fetch(`${this._url}/?q=${input}${this._getDates()}&pageSize=100&apiKey=${NEWSAPI_TOKEN}`, {
       headers: this._headers,
     }).then((res) => NewsApi.getJSONResponse(res));
   }

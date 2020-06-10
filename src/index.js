@@ -64,7 +64,6 @@ if (localStorage.getItem('token')) {
 
 window.addEventListener('resize', () => handlerResizeMenu(header, popup));
 
-
 const headerButtonHandler = (e) => {
   e.preventDefault();
 
